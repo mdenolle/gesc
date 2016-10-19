@@ -1,0 +1,42 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%		Generalized Eigenproblem Spectral Methods   		      %% 
+%%				(GESC)			  		      %%     
+%%   This package contains subroutines and codes for seismic waves generated  %%
+%%   by the interfaces air-solid (surface waves)			      %%
+%%   Maintained by Marine A. Denolle (mdenolle@fas.harvard.edu) 	      %%
+%%   This package is open source, email me for feedback, bugs,and suggestions %%
+%%    to improve and expand						      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+The main steps to solve the eigen problems are:
+ 1) Define your medium (elastic properties, layers/gradients, general)
+    make your own code and respect the medium structure
+      
+ 2) Define your time / frequency domain
+ 3) Definte your sampling scheme (recursive or simply linear)
+ 3) Solve the eigen problem
+
+The applications of the eigen functions may be:
+ + Dispersion curves
+ + Horizontal-Vertical (HV) ratios
+ + The surface-wave Green's functions
+ + The surface-wave response to a single force point source
+ + The surface-wave response to a double couple point source
+
+The DOC directory contains the pdfs for further information:
+
+%% Acnkowledgements:
+ I thank my collaborators Eric M. Duham, Gregory C. Beroza for building the core of 
+GESC, Tara Larrue (SURGE intern 2012), Sjoerd De Ridder (U Edinburgh) for their constructive 
+discussions.
+
+%% Citations:
+  - Denolle, M., E. M. Dunham, and G. C. Beroza, Solving the Surface-Wave
+     Eigenproblem with Chebyshev Spectral Collocation, 2012, Bull. Seismol. Soc.
+      Am., Vol. 102, No. 3, pp. 1214-1223, doi: 10.1785/0120110183
+   - Trefethen, L. N. (2000), Spectral Methods in MATLAB, 165 pp., Society of 
+     Industrial and Applied Mathematics, SIAM, Philadelphia.
+When using the full Green's functions (near field + far field terms), please cite:
+  -  Haney, M., Nakahara, H, Surface-Wave Green's Tensors in the Near Field, 2014, Bull. Seismol. Soc. Am., Vol. 104, No. 3, pp. {, doi: 10.1785/0120130113
+

@@ -49,10 +49,10 @@ NR.N2 = 100 ;        % maximum number of points / layers
 
 
 %% GESC
- %bigC = gesc(MED,FT,NR,max_mode,freq); % plot eigenfunctions at specific
+ bigC = gesc(MED,FT,NR,max_mode,freq); % plot eigenfunctions at specific
 % frequencies
- %save(['./mat/air2solid.mat'],'bigC','NR','MED','FT','-v7.3')
-load mat/air2solid
+ save(['./mat/air2solid.mat'],'bigC','NR','MED','FT','-v7.3')
+%load mat/air2solid
 %% get depth correction
 for HH=1:10 % loop over potential source depths from 1 to 10 km
 for i=1:length(bigC)
